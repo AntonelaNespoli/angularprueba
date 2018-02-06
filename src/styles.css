@@ -1,1 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+.footer{
+    position: absolute;
+    bottom:0px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(95, 7, 88);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+}
+
+.main-container{
+    margin-top: 15px;
+}
