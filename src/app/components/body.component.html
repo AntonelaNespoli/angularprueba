@@ -3,15 +3,15 @@
         <h1>*ngIf</h1>
         <hr>
         <button type="button" class="btn bnt-outline-primary btn-block" (click)="mostrar = !mostrar">Mostrar/Ocultar</button>
-    
+
         <br>
 
         <div *ngIf="mostrar" class="card text-white bg-info mb-3" style="max-width: 18rem;">
             <div class="card-body">
-              <h5 class="card-title">{{frase.mensaje}}</h5>
-              <p class="card-text">{{frase.autor}}</p>
+                <h5 class="card-title">{{frase.mensaje}}</h5>
+                <p class="card-text">{{frase.autor}}</p>
             </div>
-          </div>
+        </div>
     </div>
     <div class="col-6">
         <h1>*ngFor</h1>
@@ -19,6 +19,8 @@
 
         <ul class="list-group">
             <li *ngFor="let personaje of personajes; let index=index" class="list-group-item">{{index+1}}. {{personaje}}</li>
-          </ul>
+        </ul>
     </div>
 </div>
+<br><br><br>
+<app-pipes></app-pipes>

@@ -1,0 +1,123 @@
+<div class="row">
+    <div class="col-md-12">
+        <table class="table">
+            <thead class="thead-inverse">
+                <tr>
+                    <th>Variable</th>
+                    <th>Pipe</th>
+                    <th>Output</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{nombre}}</td>
+                    <td>upperCase</td>
+                    <td>{{nombre | uppercase}}</td>
+                </tr>
+                <tr>
+                    <td>{{nombre}}</td>
+                    <td>lowerCase</td>
+                    <td>{{nombre | lowercase}}</td>
+                </tr>
+                <tr>
+                    <td>{{nombre}}</td>
+                    <td>slice:3</td>
+                    <td>{{nombre | slice:3}}</td>
+                </tr>
+                <tr>
+                    <td>{{nombre}}</td>
+                    <td>slice:0:4</td>
+                    <td>{{nombre | slice:0:4}}</td>
+                </tr>
+                <tr>
+                    <td>{{array}}</td>
+                    <td>slice:1:7</td>
+                    <td>{{array | slice:1:7}}</td>
+                </tr>
+                <tr>
+                    <td>{{PI}}</td>
+                    <td>number</td>
+                    <td>{{PI | number}}</td>
+                </tr>
+                <tr>
+                    <td>{{PI}}</td>
+                    <td>number:'3.0-0'</td>
+                    <td>{{PI | number:'3.0-0'}}</td>
+                </tr>
+                <tr>
+                    <td>{{PI}}</td>
+                    <td>number:'1.0-2'</td>
+                    <td>{{PI | number:'1.0-2'}}</td>
+                </tr>
+                <tr>
+                    <td>{{nPercent}}</td>
+                    <td>percent</td>
+                    <td>{{nPercent | percent}}</td>
+                </tr>
+                <tr>
+                    <td>{{nPercent}}</td>
+                    <td>percent:'2.2-2'</td>
+                    <td>{{nPercent | percent:'2.2-2'}}</td>
+                </tr>
+                <tr>
+                    <td>{{salario}}</td>
+                    <td>currency</td>
+                    <td>{{salario | currency}}</td>
+                </tr>
+                <tr>
+                    <td>{{salario}}</td>
+                    <td>currency:'EUR'</td>
+                    <td>{{salario | currency:'EUR'}}</td>
+                </tr>
+                <tr>
+                    <td>{{salario}}</td>
+                    <td>currency:'EUR':false</td>
+                    <td>{{salario | currency:'EUR':false}}</td>
+                </tr>
+                <tr>
+                    <td>{{salario}}</td>
+                    <td>currency:'EUR:true:'4.0-0</td>
+                    <td>{{salario | currency:'EUR':true:'4.0-0'}}</td>
+                </tr>
+                <tr>
+                    <td>{{valorDePromesa}}</td>
+                    <td>Async</td>
+                    <td>{{valorDePromesa | async}}</td>
+                </tr>
+                <tr>
+                    <td>{{date}}</td>
+                    <td>date</td>
+                    <td>{{date | date}}</td>
+                </tr>
+                <tr>
+                    <td>{{date}}</td>
+                    <td>date:'medium'</td>
+                    <td>{{date | date:'medium' }}</td>
+                </tr>
+                <tr>
+                    <td>{{date}}</td>
+                    <td>date:'MMMM - dd - yyyy'</td>
+                    <td>{{date | date:'MMMM/dd/yyyy' }}</td>
+                </tr>
+                <tr>
+                    <td>{{nombres}}</td>
+                    <td>capitalizado</td>
+                    <td>{{nombres | capitalizado }}</td>
+                </tr>
+                <tr>
+                    <td>{{nombres}}</td>
+                    <td>capitalizado:false</td>
+                    <td>{{nombres | capitalizado:false }}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h4>SlicePipe</h4>
+        <ul>
+          <li *ngFor="let item of array | slice:2:5">{{item}}</li>
+        </ul>
+
+        <h4>JsonPipe</h4>
+        <pre>{{heroe | json}}</pre>
+    </div>
+</div>

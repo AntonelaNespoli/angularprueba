@@ -1,5 +1,5 @@
 .footer{
-    position: absolute;
+    position: relative;
     bottom:0px;
     width: 100%;
     text-align: center;
@@ -7,6 +7,9 @@
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bolder;
+    height: 45px;
+    padding-top: 10px
+
 }
 
 .main-container{
